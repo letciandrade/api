@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ugly Hunger</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color:   #AEC3AE;
+        }
+
+        header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+            background-color:  #AEC3AE ;
+        }
+
+        .titulo-cabecalho{
+          font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          color: #fff;
+        }
+
+      
+        .postagem{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #94A684;
+            width: 20rem;
+            height: 20rem;
+            
+        }
+
+        .titulo-postagem{
+          text-align: center;
+          font-size: 1rem;
+          color: #fff;
+          font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+       <!-- cabeçalho do blog -->
+       <header>
+            <h1 class="titulo-cabecalho">UGLY HUNGER ;)</h1>
+       </header>
+   
+   <!-- conteudo do blog -->
+       <main>
+
+        <div>
+            <h1 class="titulo-postagem">POSTAGENS</h1>
+        </div>
+
+   
+    <form action="/posts" method="post">
+        <section class="postagem">
+        <div>
+            <input type="text" placeholder="legenda postagem" name="legenda">
+        </div>
+
+        <div>
+            <input type="submit" value="postar">
+        </div>
+    </section>
+    </form>
+   
+       </main>
+   
+   <!-- rodapé do blog -->
+       <footer>
+   <p>todos os direitos reservados.</p>
+       </footer>
+</body>
+</html>
